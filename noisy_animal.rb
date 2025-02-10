@@ -9,6 +9,7 @@ module NoisyAnimal
       'hadedah' => Hadedah.new,
       'eagle' => Eagle.new,
       'owl' => Owl.new,
+      'snake' => Snake.new,
       }[species]
   end
 end
@@ -70,5 +71,15 @@ end
 class Owl < Animal
   def noise
     'hoot'
+  end
+end
+
+class Snake < Animal
+  def make_loud_noise
+    puts "hiss"
+  end
+
+  def make_quiet_noise
+    puts "slither"
   end
 end

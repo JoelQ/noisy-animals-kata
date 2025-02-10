@@ -28,6 +28,14 @@ describe NoisyAnimal do
     end
   end
 
+  context 'when the animal is a snake' do
+    it 'makes a hiss noise' do
+      animal = NoisyAnimal.new('snake')
+
+      expect { animal.make_noise }.to output("hiss\n").to_stdout
+    end
+  end
+
   context 'when the animal is unusually quiet' do
     it 'cat goes meow' do
       animal = NoisyAnimal.new('cat')
@@ -45,6 +53,12 @@ describe NoisyAnimal do
       animal = NoisyAnimal.new('leopard')
 
       expect { animal.make_noise(loud: false) }.to output("growl\n").to_stdout
+    end
+
+    it 'snake goes sliter' do
+      animal = NoisyAnimal.new('snake')
+
+      expect { animal.make_noise(loud: false) }.to output("slither\n").to_stdout
     end
   end
 
