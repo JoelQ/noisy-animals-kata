@@ -24,3 +24,8 @@
   birds they might accidentally make the wrong sound.
 - there was untested (unwanted?) behavior in the original implementation where
   the program would still output "squawk" for quiet hadedahs before raising
+- Inheritance hierarchy makes it easy to vary the behavior of the animals
+- The test file makes a difference between animals and birds that distinction is
+  irrelevant from a behavior perspective
+- The polymorphic approach makes it easy to write Open/Closed Principle compliant
+  code

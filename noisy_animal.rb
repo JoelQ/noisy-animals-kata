@@ -10,6 +10,7 @@ module NoisyAnimal
       'eagle' => Eagle.new,
       'owl' => Owl.new,
       'snake' => Snake.new,
+      'mouse' => Mouse.new,
       }[species]
   end
 end
@@ -81,5 +82,11 @@ class Snake < Animal
 
   def make_quiet_noise
     puts "slither"
+  end
+end
+
+class Mouse < Animal
+  def make_noise(loud: true)
+    puts ""
   end
 end
