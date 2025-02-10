@@ -8,15 +8,13 @@ class NoisyAnimal
   end
 
   def make_noise(loud: true)
-    if is_bird && !loud
+    if is_bird && loud
+      make_bird_noise(true)
+    elsif is_bird && !loud
       make_bird_noise(false)
-    end
-    if loud
-      if is_mammal
-        2.times { puts mammal_noise }
-      end
-      make_bird_noise(true) if is_bird
-    elsif  is_mammal
+    elsif is_mammal && loud
+      2.times { puts mammal_noise }
+    elsif is_mammal && !loud
       puts mammal_noise
     end
   end
