@@ -33,24 +33,18 @@ class NoisyAnimal
     }[species]
   end
 
+  def bird_noise
+      {
+        'hadedah' => 'squawk',
+        'eagle' => 'caw',
+        'owl' => 'hoot'
+      }[species]
+  end
+
   def make_bird_noise(is_loud = true)
-    if species == 'hadedah'
-      puts 'squawk'
-    elsif species == 'eagle'
-      puts 'caw'
-    else
-      puts 'hoot'
-    end
+    puts bird_noise
     if is_loud
-      if species == 'owl'
-        puts 'hoot'
-      end
-      if species == 'eagle'
-        puts 'caw'
-      end
-      if species == 'hadedah'
-        puts 'squawk'
-      end
+      puts bird_noise
     else
       raise 'there is no such thing as a quiet hadedah!' if species == 'hadedah'
     end

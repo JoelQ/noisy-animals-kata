@@ -19,3 +19,6 @@
 - <3 [decision tables](https://www.hillelwayne.com/decision-tables)
 - flat conditional structures are easier to read
 - there is untested edge-case for species that are neither birds not animals
+- defaulting to "hoot" for unknown birds in `make_bird_noise` is probably
+  unintentional. Currently it would only happen for owls but if we added more
+  birds they might accidentally make the wrong sound.
