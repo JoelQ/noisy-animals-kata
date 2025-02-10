@@ -1,19 +1,7 @@
 # frozen_string_literal: true
 
-class NoisyAnimal
-  attr_reader :species
-
-  def initialize(species)
-    @species = species
-  end
-
-  def make_noise(loud: true)
-    animal.make_noise(loud: loud)
-  end
-
-  private
-
-  def animal
+module NoisyAnimal
+  def self.new(species)
     {
       'cat' => Cat.new,
       'dog' => Dog.new,
