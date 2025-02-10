@@ -22,3 +22,5 @@
 - defaulting to "hoot" for unknown birds in `make_bird_noise` is probably
   unintentional. Currently it would only happen for owls but if we added more
   birds they might accidentally make the wrong sound.
+- there was untested (unwanted?) behavior in the original implementation where
+  the program would still output "squawk" for quiet hadedahs before raising
