@@ -1,5 +1,25 @@
 # Noisy Animals Kata
 
+This is my solution to the [noisy animals kata](https://github.com/thoughtbot/noisy-animals-kata). I've included the original README
+below. Check out [my notes](NOTES.md) to see how I answered the before and after
+questions. I also wrote detailed commit messages at each step of the refactor
+explaining my thought process and the various patterns and principles I was
+trying to apply. One even includes an ASCII decision table! It's worth reading
+through the log.
+
+I effectively have two solutions to the original problem:
+
+1. A procedural solution that normalizes and simplifies all the conditional
+code. View the state of the project at the `procedural-refactor` tag.
+2. I keept refactoring into a more OO-style polymorphic solution. View the state
+of the project at the `oo-refactor` tag.
+
+I built on top of the OO solution to add the new animals. I think it was best
+suited for the kinds of changes that needed to be done to add the new animals.
+If you check out latest `main` this is the solution you'll see.
+
+## Installation
+
 Install noisy animals:
 
 ```
